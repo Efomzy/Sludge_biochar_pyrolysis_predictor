@@ -66,8 +66,8 @@ if C+H+O+N+S+A >= 85 and C+H+O+N+S+A <= 115 and A+VM+FC >= 85 and A+VM+FC <= 115
   Nb4 = XGB4.predict([[C, H, O, N, S, A, VM, FC, HR, RT, T]])
   Ab5 = XGB5.predict([[C, H, O, N, S, A, VM, FC, HR, RT, T]])
   pHb6 = XGB6.predict([[C, H, O, N, S, A, VM, FC, HR, RT, T]])
-  H/Cb7 = XGB7.predict([[C, H, O, N, S, A, VM, FC, HR, RT, T]])
-  O/Cb8 = XGB8.predict([[C, H, O, N, S, A, VM, FC, HR, RT, T]])
+  HCb7 = XGB7.predict([[C, H, O, N, S, A, VM, FC, HR, RT, T]])
+  OCb8 = XGB8.predict([[C, H, O, N, S, A, VM, FC, HR, RT, T]])
   EDR9 = XGB9.predict([[C, H, O, N, S, A, VM, FC, HR, RT, T]])
   HHV10 = XGB10.predict([[C, H, O, N, S, A, VM, FC, HR, RT, T]])
   
@@ -78,8 +78,8 @@ if C+H+O+N+S+A >= 85 and C+H+O+N+S+A <= 115 and A+VM+FC >= 85 and A+VM+FC <= 115
   Nb = round(Nb4[0], 2)
   Ab = round(Ab5[0], 2)
   pHb = round(pHb6[0], 2)
-  H/Cb = round(H/Cb7[0], 2)
-  O/Cb = round(O/Cb8[0], 2)
+  HCb = round(HCb7[0], 2)
+  OCb = round(OCb8[0], 2)
   EDR = round(EDR9[0], 2)
  HHV = round(HHV10[0], 2)
 
@@ -91,8 +91,8 @@ else:
   Nb = 'error in input data'
   Ab = 'error in input data'
   pHb = 'error in input data'
-  H/Cb = 'error in input data'
-  O/Cb = 'error in input data'
+  HCb = 'error in input data'
+  OCb = 'error in input data'
   EDR = 'error in input data'
   HHV = 'error in input data'
 
@@ -108,7 +108,7 @@ if st.button('Click here to predict sludge biochar properties'):
     st.write('Ab (wt.%)', Ab)
     
   with col4:
-     st.write('H/Cb', H/Cb)
+     st.write('H/Cb', HCb)
     
   with col5:
      st.write('EDR', EDR)
@@ -124,7 +124,7 @@ if st.button('Click here to predict sludge biochar properties'):
     st.write('pHb', pHb)
     
   with col4:
-     st.write('O/Cb', O/Cb)
+     st.write('O/Cb', OCb)
     
   with col5:
      st.write('HHV (MJ/kg)', HHV)
