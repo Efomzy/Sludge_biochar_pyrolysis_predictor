@@ -53,7 +53,10 @@ with col3:
   
   
 with col1:
-  N = st.number_input("Hydrogen content (%)", 0.00,15.00)
+  N = st.number_input("Nitrogen content (%)", 0.00,15.00)
+
+with col1:
+  S = st.number_input("Sulfur content (%)", 0.00,15.00)
   
  
 
