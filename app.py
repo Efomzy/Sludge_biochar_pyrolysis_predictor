@@ -20,15 +20,15 @@ st.subheader('(Ultimate and Proximate properties should be in dry basis)')
 col1, col2, col3 = st.columns(3)
 
 with col1:
-  st.write(Ultimate properties)
+  st.write('(Ultimate properties)')
   C = st.number_input("Carbon content (%)", 0.00,50.00)
 
 with col2:
-  st.write(Proximate properties)
+  st.write('(Proximate properties)')
   A = st.number_input("Ash content (%)", 0.00,80.00)
   
 with col3:
-  st.write(Pyrolysis conditions)
+  st.write('(Pyrolysis conditions)')
   HR = st.number_input("Heating Rate (°C/min)", 0.00,100.00)
   
   
