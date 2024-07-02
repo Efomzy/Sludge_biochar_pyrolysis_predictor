@@ -54,8 +54,7 @@ with col3:
   
 with col1:
   N = st.number_input("Hydrogen content (%)", 0.00,15.00)
-with col1:
-  S = st.number_input("Hydrogen content (%)", 0.00,15.00)
+  
  
 
 if C+H+O+N+S+A >= 85 and C+H+O+N+S+A <= 115 and A+VM+FC >= 85 and A+VM+FC <= 115:
