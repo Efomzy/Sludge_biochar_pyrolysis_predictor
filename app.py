@@ -29,7 +29,7 @@ with col2:
   
 with col3:
   st.write('(Pyrolysis conditions)')
-  HR = st.number_input("Heating Rate (°C/min)", 0.00,100.00)
+  HR = st.number_input("Heating Rate (°C/min)", 5.00,97.00)
   
   
 with col1:
@@ -39,7 +39,7 @@ with col2:
   VM = st.number_input("Volatile Matter (%)", 0.00,75.00)
   
 with col3:
-  RT = st.number_input("Residence Time (min)", 0.00,300.00)
+  RT = st.number_input("Residence Time (min)", 10.00,300.00)
   
   
 with col1:
